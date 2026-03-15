@@ -1,1 +1,1 @@
-
+public class Student {}
