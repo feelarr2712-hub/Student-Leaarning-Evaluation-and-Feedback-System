@@ -1,1 +1,1 @@
-public class FinalScore
+public class FinalScore {}
