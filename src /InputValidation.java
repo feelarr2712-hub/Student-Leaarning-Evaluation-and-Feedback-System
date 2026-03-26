@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class InputValidation {
 
-    public static void main(String[]args)
+   static void InputValidation()
     {
         double assignment = 0;
         double exam = 0;
