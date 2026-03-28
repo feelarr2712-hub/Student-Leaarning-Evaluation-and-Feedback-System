@@ -3,7 +3,10 @@ public class FeedbackGenerator {
     static void Feedback () {
 
         // Sample data (this will come from other members in real system)
-     
+
+
+        String name = "";
+        double finalScore = 0;
 
         // Feedback logic
         if (finalScore >= 85) {
