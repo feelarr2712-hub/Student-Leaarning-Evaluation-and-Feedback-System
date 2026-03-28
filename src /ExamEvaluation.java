@@ -6,7 +6,7 @@ public class ExamEvaluation {
 
  
 
-   static void () {
+   static void GetExam() {
 
        Scanner input = new Scanner(System.in);
 
