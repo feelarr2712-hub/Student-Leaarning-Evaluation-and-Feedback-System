@@ -24,7 +24,7 @@ public class InputValidation {
 
         if (assignment < 0 || assignment > 100)
             System.out.println("Invalid,\nTry again");
-        else if (exam < 0 || exam > 100)
+        if (exam < 0 || exam > 100)
             System.out.println("Invalid \nTry again");
         else
             System.out.println("Loading...");
