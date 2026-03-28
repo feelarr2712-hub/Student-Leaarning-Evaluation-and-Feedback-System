@@ -1,6 +1,6 @@
 public class FeedbackGenerator {
 
-    static void Feedback () {
+    static String Feedback () {
 
         // Sample data (this will come from other members in real system)
 
