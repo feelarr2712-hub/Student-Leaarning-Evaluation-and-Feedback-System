@@ -1,10 +1,9 @@
 public class FeedbackGenerator {
 
-    public static void main(String[] args) {
+    static void Feedback () {
 
         // Sample data (this will come from other members in real system)
-        String name = "John";
-        double finalScore = 78;
+     
 
         // Feedback logic
         if (finalScore >= 85) {
@@ -19,6 +18,7 @@ public class FeedbackGenerator {
         else {
             System.out.println(name + " - Poor performance. Immediate improvement is needed. Please seek help.");
         }
+        
     }
 }
 
