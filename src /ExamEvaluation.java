@@ -10,9 +10,9 @@ public class ExamEvaluation {
 
        double ExamMarks = 0;
 
-       double ExamPercentage = (ExamMarks * 0.6);
+       double ExamScore = (ExamMarks * 0.6);
       
-      return ;
+      return ExamScore;
    }
 
 }
