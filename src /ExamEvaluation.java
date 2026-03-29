@@ -3,13 +3,12 @@
 public class ExamEvaluation {
 
 
-   static double GetExam() {
+   static double GetExam(double marks) {
  
 
        // Apply weightage
 
-       double ExamMarks = 0;
-
+      
        double ExamScore = (ExamMarks * 0.6);
       
       return ExamScore;
