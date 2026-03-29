@@ -1,29 +1,16 @@
 //Member 5
 
-import java.util.Scanner;
-
 public class ExamEvaluation {
 
- 
 
-   static int GetExam() {
-
-       Scanner input = new Scanner(System.in);
-
- 
-
-       System.out.print("Enter ExamMarks: ");
-
-       double ExamMarks = input.nextDouble();
+   static double GetExam() {
  
 
        // Apply weightage
 
+       double ExamMarks = 0;
+
        double ExamPercentage = (ExamMarks * 0.6);
-
- 
-
-       System.out.println("Exam score: " + ExamPercentage + "%");
 
    }
 
