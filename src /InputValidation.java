@@ -1,30 +1,25 @@
 
 //Member 3
 
-import java.util.Scanner;
+public class InputValidation {
 
 
-public class InputValidation
-{
+    static double Input() {
 
-   Scanner in = new Scanner(System.in);
-
-    System.out.println("Enter your assignment marks: ");
-    System.out.print("Enter yor exam number");
-
-    double marks = in.nextInt();
-
-    static double Validate()
-    {
         double marks = 0;
 
-        while (marks >= 0 && marks <= 100)
-            return marks;
+        while (marks >= 0 && marks <= 100) {
+           System.out.print(marks);
+            marks++;
+        }
+        return marks;
     }
-    static String Validate()
-    {
-        double marks = 0;
-        if(marks < 0 || marks > 100)
-            return "Invalid , /n Try again";
+
+    static String Validate() {
+        double marks = 0.0 ;
+        if (marks > 100 || marks < 0) 
+            System.out.println("Invalid , /n Try again") ;
+        return"";
     }
+
 }
