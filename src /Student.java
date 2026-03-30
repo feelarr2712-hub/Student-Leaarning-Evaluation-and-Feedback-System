@@ -2,15 +2,15 @@
 public class Student {
 
     // Attributes
-     String studentID;
-     String name;
+     String StudentID;
+     String Name;
      String CourseName;
 
-     double assignment1;
-     double assignment2;
-     double assignment3;
+     double Assignment1;
+     double Assignment2;
+     double Assignment3;
     
-     double exam;
+     double Exam;
      double finalScore;
 
     String grade;
@@ -18,6 +18,7 @@ public class Student {
 
     
     }
+
 
 
 
