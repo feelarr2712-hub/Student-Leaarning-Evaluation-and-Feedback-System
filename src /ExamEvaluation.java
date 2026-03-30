@@ -3,7 +3,7 @@
 public class ExamEvaluation {
 
 
-   static double GetExam(double ExamMarks) {
+   static double GetExam(double examMarks) {
  
 
        // Apply weightage
