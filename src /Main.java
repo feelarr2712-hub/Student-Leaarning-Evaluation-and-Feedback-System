@@ -1,4 +1,5 @@
 //Member1 
+
 import java.util.Scanner;
 
 public class Main {
@@ -97,6 +98,10 @@ public class Main {
                 break;
                 case 3:
                     System.out.println("calculate FinalScore");
+
+
+                    // Exam weight (60%)
+                    double ExamScore = ExamEvaluation.GetExam(s.Exam);
                     break;
                 case 4:
                     System.out.println("Display Feedback");
