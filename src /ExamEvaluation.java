@@ -9,7 +9,7 @@ public class ExamEvaluation {
        // Apply weightage
 
       
-       double ExamScore = (ExamMarks * 0.6);
+       double ExamScore = (examMarks * 0.6);
       
       return ExamScore;
    }
