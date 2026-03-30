@@ -2,15 +2,19 @@
 
     public class FinalScore{
 
-    public static String calculateGrade(double totalScore) {
+      public static double getfinalScore(double assignmentScore , double examScore )
+      { finalScore = assignmentScore + examScore;
+       return; finalScore; }
+
+    public static String calculateGrade(double finalScore) {
         String grade;
-        if (totalScore >= 80) {
+        if (finalScore >= 80) {
             grade = "A (Excellent)";
-        } else if (totalScore >= 70) {
+        } else if (finalScore >= 70) {
             grade = "B (Good)";
-        } else if (totalScore >= 60) {
+        } else if (finalScore >= 60) {
             grade = "C (Satisfactory)";
-        } else if (totalScore >= 50) {
+        } else if (finalScore >= 50) {
             grade = "D (Pass)";
         } else {
             grade = "F (Fail - Needs Improvement)";
