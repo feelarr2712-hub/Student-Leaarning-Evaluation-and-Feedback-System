@@ -1,3 +1,4 @@
+//Member1 
 import java.util.Scanner;
 
 public class Main
@@ -6,7 +7,7 @@ public class Main
     {
 
 
-
+        Student s = new Student();
         int choice ;
 
         System.out.println("----MENU-----");
@@ -22,12 +23,28 @@ public class Main
 
 
         switch(choice) {
-            case 1:
-                System.out.println("Enter Student name: ");
+            case 1: {
+                System.out.println("Enter Name: ");
+                s.Name = in.nextLine();
+
+                System.out.println("Enter StudentID: ");
+                s.StudentID = in.nextLine();
+
+                System.out.println("Enter course: ");
+                s.CourseName = in.nextLine(); }
                 break;
-            case 2:
-                System.out.println("Enter Assignment: ");
+            case 2: {
+                System.out.println("Enter Assignment1: ");
+                s.Assignment1 = in.nextInt();
+                
+                System.out.println("Enter Assignment2: ");
+                s.Assignment2 = in.nextInt();
+                
+                System.out.println("Enter Assignment3: ");
+                s.Assignment3 = in.nextInt();
+                        
                 System.out.println("Enter Exam: ");
+                s.Exam = in.nextInt(); }
                 break;
             case 3:
                 System.out.println("calculate FinalScore");
@@ -44,4 +61,3 @@ public class Main
 
     }
 }
-
