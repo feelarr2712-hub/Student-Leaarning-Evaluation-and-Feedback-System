@@ -1,10 +1,10 @@
-//Member 
+//Member 2
 public class Student {
 
     // Attributes
      String studentID;
      String name;
-     String courseName;
+     String CourseName;
 
      double assignment1;
      double assignment2;
