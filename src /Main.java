@@ -101,7 +101,7 @@ public class Main {
 
 
                     // Exam weight (60%)
-                    double ExamScore = ExamEvaluation.GetExam(s.Exam);
+                    double examScore = ExamEvaluation.getExam(s.Exam);
                     break;
                 case 4:
                     System.out.println("Display Feedback");
