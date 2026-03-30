@@ -10,11 +10,11 @@ public class Student {
      double assignment2;
      double assignment3;
     
-     double examMark;
+     double exam;
      double finalScore;
 
-    String grade
-    String feedback
+    String grade;
+    String feedback;
 
     
     }
