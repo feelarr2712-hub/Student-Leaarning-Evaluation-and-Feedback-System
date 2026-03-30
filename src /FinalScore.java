@@ -4,7 +4,7 @@
 
       public static double getfinalScore(double assignmentScore , double examScore )
       { double finalScore = assignmentScore + examScore;
-       return; finalScore; }
+       return finalScore; }
 
     public static String calculateGrade(double finalScore) {
         String grade;
