@@ -9,6 +9,8 @@ public class Student {
      double Assignment1;
      double Assignment2;
      double Assignment3;
+
+
     
      double Exam;
      double finalScore;
@@ -18,7 +20,6 @@ public class Student {
 
     
     }
-
 
 
 
