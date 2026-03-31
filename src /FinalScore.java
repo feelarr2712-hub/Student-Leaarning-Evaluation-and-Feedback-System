@@ -7,7 +7,9 @@
        return finalScore; }
 
     public static String calculateGrade(double finalScore) {
-        String grade;
+
+          String grade;
+
         if (finalScore >= 80) {
             grade = "A (Excellent)";
         } else if (finalScore >= 70) {
@@ -22,3 +24,4 @@
         return grade;
     }
 }
+
