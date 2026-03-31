@@ -1,27 +1,32 @@
+// Member 7
+
 public class FeedbackGenerator {
 
-    static String Feedback () {
+    static String Feedback (double finalScore) {
 
         // Sample data (this will come from other members in real system)
 
 
-        String name = "";
-        double finalScore = 0;
+
 
         // Feedback logic
-        if (finalScore >= 85) {
-            System.out.println(name + " - Excellent performance! Keep up the great work.");
+        if (finalScore >= 80) {
+            return " - Excellent performance! Keep up the great work.";
         }
         else if (finalScore >= 70) {
-            System.out.println(name + " - Good job! You are doing well, but there is room for improvement.");
+            return " - Good, but there is room for improvement.";
         }
+        else if  (finalScore >= 60) {
+            return " - It's not bad ,but it's not good either.You can improve with more effort. ";
+        }
+
         else if (finalScore >= 50) {
-            System.out.println(name + " - Fair performance. You should work harder to improve your results.");
+            return " - Fair performance. You should work harder to improve your results.";
         }
         else {
-            System.out.println(name + " - Poor performance. Immediate improvement is needed. Please seek help.");
+            return " - Poor performance. Immediate improvement is needed. Please seek help.";
         }
-        
+
     }
 }
 
