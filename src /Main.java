@@ -4,11 +4,15 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+     static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
         Student s = new Student();
         int choice;
+
+        boolean name = false;
+        boolean marks = false;
+        boolean calculate = false;
 
         while (true) {
             System.out.println("----MENU-----");
@@ -32,13 +36,17 @@ public class Main {
                     System.out.println("Enter StudentID: ");
                     s.StudentID = in.nextLine();
 
-                    System.out.println("Enter course: ");
+                    System.out.println("Enter Course: ");
                     s.CourseName = in.nextLine();
                 }
+                name = true;
                 break;
                 case 2: {
-                    double assignment1;
+                    if(!name) {
+                        System.out.println("⚠ Please add student first!");
+                        break; }
 
+                    double assignment1;
                     do {
                         System.out.print("Enter Assignment1: ");
                         assignment1 = in.nextDouble();
@@ -95,16 +103,45 @@ public class Main {
 
                     s.Exam = exam;
                 }
+                marks = true;
                 break;
                 case 3:
-                    System.out.println("calculate FinalScore");
+                    if(!marks) {
+                        System.out.println("⚠ Please add student info first!");
+                        break; }
 
+                    // Assignment wight
+                    double assignmentMarks = AssignmentEvaluation.getAssignment(s.Assignment1, s.Assignment2, s.Assignment3);
+                    System.out.println("Assignment Average = " + assignmentMarks);
 
-                    // Exam weight (60%)
+                    double assignmentScore = AssignmentEvaluation.getAssignment(s.Assignment1, s.Assignment2, s.Assignment3);
+                    System.out.println("Assignment Score = " + assignmentScore + '%');
+
+                    // Exam weight
                     double examScore = ExamEvaluation.getExam(s.Exam);
+                    System.out.println("ExamScore = " + examScore + '%');
+
+                    // Final Score
+                    double finalScore = FinalScore.getfinalScore(assignmentScore, examScore);
+                    s.finalScore = finalScore;
+                    System.out.println("Student Score = " + finalScore + '%');
+
+                    String grade = FinalScore.calculateGrade(s.finalScore);
+                    s.grade = grade;
+                    System.out.println("Grade : " + grade);
+
+                    calculate = true;
                     break;
                 case 4:
-                    System.out.println("Display Feedback");
+                    if(!calculate) {
+                        System.out.println("There is nothing to show!");
+                        break; }
+
+                    String feedback = FeedbackGenerator.Feedback(s.finalScore);
+                    s.feedback = feedback;
+                    System.out.println("Feedback: " + feedback);
+
+                    Display.displaySummary(s);
                     break;
                 case 5:
                     System.out.println("Exit");
